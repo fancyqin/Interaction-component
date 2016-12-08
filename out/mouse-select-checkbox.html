@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标选择输入 复选框Checkbox Box</title>
+    <link rel="stylesheet" href="http://www.micstatic.com/gb/out/demo.css">
+<!--<link rel="stylesheet" href="src/css/demo.css">-->
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div class="ob-nav">
+    <ul>
+        <li><b>鼠标选择输入</b></li>
+        <li><a href="mouse-select-radio.html">单选框Radio Box</a></li>
+        <li><a href="mouse-select-checkbox.html">复选框Check Box</a></li>
+        <li><a href="mouse-select-radio-button.html">单选按钮</a></li>
+        <li><a href="mouse-select-checkbox-button.html">单选按钮</a></li>
+    </ul>
+</div>
+	
+	<div class="obelisk obelisk-form interaction">
+		<h2>复选框 Checkbox Box
+            <div class="trigger-all">展开所有代码
+    <div class="input-toggle J-step-2">
+        <label class="input-wrap">
+            <input class="J-codeTriggerAll" type="checkbox">
+            <span class="input-ctnr"></span>
+        </label>
+    </div>
+</div> 
+        </h2>
+
+        <h3>一、控件说明</h3>
+        <div class="inter-inner">
+            <p>RadioButton 控件为用户提供由两个或多个互斥选项组成的选项集</p>
+        </div>
+        
+        <h3>二、参数限制</h3>
+        <div class="inter-inner">
+            <h2 class="param">1. 用于一组可以多选的数据</h2>
+            <div class="tips">
+                <ol>
+                    <li>可以设置默认选项，用户可手动取消选择；</li>
+                    <li>每一选项之间不互斥，可选择多项或不选；</li>
+                    <li>取消选择其中一项时其他项不受影响。</li>
+                </ol>
+            </div>
+            <div id="code-1">
+                <div class="ob-code">
+<div class="input-checkbox">
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项一
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c" checked>
+        <span class="input-ctnr"></span> 复选框选项二
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项三
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项四
+    </label>
+</div>
+                </div>
+            </div>
+
+            <h2 class="param">2. 选项可以是一句话或者词组</h2>
+            <div id="code-2">
+                <div class="ob-code">
+<h2>选项组标题</h2>
+<div class="input-checkbox">
+    <label class="input-wrap">
+        <input type="checkbox" name="c" checked>
+        <span class="input-ctnr"></span> 词组1
+    </label>
+    <label class="input-wrap">
+        <input type="checkbox" name="c" checked>
+        <span class="input-ctnr"></span> 词组2
+    </label>
+    <label class="input-wrap">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 词组3
+    </label>
+    <label class="input-wrap">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 词组4
+    </label>
+</div>
+<br><br>
+<h2>选项组标题</h2>
+<div class="input-checkbox">
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c" checked>
+        <span class="input-ctnr"></span> 复选框选项一复选框选项一复选框选项一复选框选项一复选框选项一复选框选项一
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项二复选框选项二复选框选项二复选框选项二复选框选项二
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项三复选框选项三复选框选项三复选框选项三
+    </label>
+    <label class="input-wrap" style="display:block">
+        <input type="checkbox" name="c">
+        <span class="input-ctnr"></span> 复选框选项四复选框选项四复选框选项四
+    </label>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <h3>引用</h3>
+        <div class="sample-block">
+            <div class="highlight J-highlight">
+@import "$${path.common}/obelisk/lib/_input";
+            </div>
+        </div>
+	</div>
+
+    <script src="src/js/asset/ace/ace.js"></script>
+<script src="src/js/asset/ace/ext-static_highlight.js"></script>
+<!--<script src="src/js/asset/ace/ext-beautify.js"></script>-->
+<script src="src/js/asset/clipboard/clipboard.min.js"></script>
+
+<script src="http://www.micstatic.com/gb/js/libs/jquery.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/observe/observe.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/simplePromise/simplePromise.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/tour/tour.js"></script>
+<!--<script src="src/js/tour.js"></script>-->
+<script src="src/js/code.js"></script>
+	<script>
+
+        new Obdemo({
+            items:[{elId:'code-1'},{elId:'code-2'}]
+        });
+    </script>
+
+</body>
+</html>

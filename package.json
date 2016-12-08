@@ -1,0 +1,26 @@
+{
+  "name": "interaction-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancyqin/Interaction-component.git"
+  },
+  "author": "QF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fancyqin/Interaction-component/issues"
+  },
+  "homepage": "https://github.com/fancyqin/Interaction-component#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-content-includer": "0.0.7",
+    "gulp-ruby-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-utf8-convert": "0.0.7"
+  }
+}

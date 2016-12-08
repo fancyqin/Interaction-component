@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标选择输入 单选按钮</title>
+    <!--include "_cssImport.html"-->
+</head>
+<body>
+
+<!--include "_nav.html"-->
+	
+	<div class="obelisk obelisk-form interaction">
+		<h2>单选按钮
+            <!--include "_triggerAll.html"--> 
+        </h2>
+
+        <h3>一、控件说明</h3>
+        <div class="inter-inner">
+            <p>单选按钮控件为用户提供由两个或多个互斥选项组成的选项集。</p>
+        </div>
+        
+        <h3>二、参数限制</h3>
+        <div class="inter-inner">
+            <h2 class="param">1. <b>建议</b>每个按钮的文案长度在2~6个中文字符，不超过2个英文单词，或是一枚图标；</h2>
+            <h2 class="param">2. 每组数据只能选一个，选项之间是互斥的关系；</h2>
+            <h2 class="param">3. <b>建议</b>每组按钮数量不超过5个。</h2>
+            <h3>1. 作为必选项时</h3>
+            <div class="tips">
+                
+                <ol>
+                    <li>有默认选项，且不可以手动取消；</li>
+                    <li>每一选项之间互斥，选择另一项时，当前项取消选中。</li>
+                </ol>
+            </div>
+            <div id="code-1">
+                <div class="ob-code">
+<div class="input-checkbox">
+    todo
+</div>
+                </div>
+            </div>
+            <h3>2. 作为非必选项时</h3>
+            <div class="tips">
+                <ol>
+                    <li>可以默认选项，可以手动取消；</li>
+                    <li>每一选项之间互斥，选择另一项时，当前项取消选中；</li>
+                    <li>可以是句子或词组。</li>
+                </ol>
+            </div>
+
+
+            
+            <div id="code-2">
+                <div class="ob-code">
+<h2>选项组标题</h2>
+<div class="input-checkbox">
+    todo
+</div>
+<br><br>
+<h2>选项组标题</h2>
+<div class="input-checkbox">
+    todo
+</div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <h3>引用</h3>
+        <div class="sample-block">
+            <div class="highlight J-highlight">
+@import "$${path.common}/obelisk/lib/_input";
+            </div>
+        </div>
+	</div>
+
+    <!--include "_jsImport.html"-->
+	<script>
+
+        new Obdemo({
+            items:[{elId:'code-1'},{elId:'code-2'}]
+        });
+    </script>
+
+</body>
+</html>

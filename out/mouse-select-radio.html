@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标选择输入 单选框Radio Box</title>
+    <link rel="stylesheet" href="http://www.micstatic.com/gb/out/demo.css">
+<!--<link rel="stylesheet" href="src/css/demo.css">-->
+<link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div class="ob-nav">
+    <ul>
+        <li><b>鼠标选择输入</b></li>
+        <li><a href="mouse-select-radio.html">单选框Radio Box</a></li>
+        <li><a href="mouse-select-checkbox.html">复选框Check Box</a></li>
+        <li><a href="mouse-select-radio-button.html">单选按钮</a></li>
+        <li><a href="mouse-select-checkbox-button.html">单选按钮</a></li>
+    </ul>
+</div>
+	
+	<div class="obelisk obelisk-form interaction">
+		<h2>单选框 Radio Box
+            <div class="trigger-all">展开所有代码
+    <div class="input-toggle J-step-2">
+        <label class="input-wrap">
+            <input class="J-codeTriggerAll" type="checkbox">
+            <span class="input-ctnr"></span>
+        </label>
+    </div>
+</div> 
+        </h2>
+
+        <h3>一、控件说明</h3>
+        <div class="inter-inner">
+            <p>RadioButton 控件为用户提供由两个或多个互斥选项组成的选项集</p>
+        </div>
+        
+        <h3>二、参数限制</h3>
+        <div class="inter-inner">
+            <h2 class="param">1. 每个按钮选项对应的文案长度不限；</h2>
+            <h2 class="param">2. <b>建议</b>每组按钮数量不超过4个；</h2>
+            <h2 class="param">3. 大多是圆形按钮。</h2>
+            
+            <div class="tips">
+                <ol>
+                    <li>默认选中其中一项， 已选中的选项不可手动取消；</li>
+                    <li>一次只能有一个选项被选中。已选中一个选项时，可以选择其他选项，其他选项被选中时，当前选项取消选中。</li>
+                </ol>
+            </div>
+            <div id="code-1">
+                <div class="ob-code">
+    <div class="input-radio">
+        <label class="input-wrap">
+            <input type="radio" name="sex">
+            <span class="input-ctnr"></span> 希拉里
+        </label>
+        <label class="input-wrap">
+            <input type="radio" name="sex" checked>
+            <span class="input-ctnr"></span> 川普
+        </label>
+        <label class="input-wrap">
+            <input type="radio" name="sex">
+            <span class="input-ctnr"></span> 奥巴马
+        </label>
+        <label class="input-wrap">
+            <input type="radio" name="sex">
+            <span class="input-ctnr"></span> 克林顿
+        </label>
+    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+
+        <h3>引用</h3>
+        <div class="sample-block">
+            <div class="highlight J-highlight">
+@import "$${path.common}/obelisk/lib/_input";
+            </div>
+        </div>
+	</div>
+
+    <script src="src/js/asset/ace/ace.js"></script>
+<script src="src/js/asset/ace/ext-static_highlight.js"></script>
+<!--<script src="src/js/asset/ace/ext-beautify.js"></script>-->
+<script src="src/js/asset/clipboard/clipboard.min.js"></script>
+
+<script src="http://www.micstatic.com/gb/js/libs/jquery.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/observe/observe.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/simplePromise/simplePromise.js"></script>
+<script src="http://www.micstatic.com/gb/js/assets/tour/tour.js"></script>
+<!--<script src="src/js/tour.js"></script>-->
+<script src="src/js/code.js"></script>
+	<script>
+
+        new Obdemo({
+            items:[{elId:'code-1'}]
+        });
+    </script>
+
+</body>
+</html>
